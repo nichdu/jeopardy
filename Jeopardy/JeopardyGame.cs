@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.IO;
+using System.Drawing;
 
 namespace Jeopardy
 {
@@ -10,8 +10,21 @@ namespace Jeopardy
     {
         string _doc;
         Category[] _categories;
+        Player[] _players;
+        Color[] _colors = new Color[3] { Color.Red, Color.Lime, Color.DeepSkyBlue };
 
-        public JeopardyGame(string path)
+        private static JeopardyGame instance;
+
+        public static JeopardyGame GetInstance(string path)
+        {
+            if (instance == null)
+            {
+                instance = new JeopardyGame(path);
+            }
+            return instance;
+        }
+
+        private JeopardyGame(string path)
         {
             _categories = new Category[5];
             if (File.Exists(path))
@@ -21,6 +34,7 @@ namespace Jeopardy
                 myFile.Close();
             }
             readQuestions();
+            _players = new Player[3];
         }
 
         private void readQuestions()
@@ -33,17 +47,37 @@ namespace Jeopardy
                     ++i;
                     continue;
                 }
-                string sFirst = str.Split(new Char[] {'#','#'})[0];
-                string sSecond = str.Split(new Char[] { '#', '#' })[2];
+                string sFirst = str.Split(new Char[] { '§' })[0];
+                string sSecond = str.Split(new Char[] { '§' })[1];
                 if (sFirst == "CAT")
                 {
                     _categories[i] = new Category(sSecond);
                 }
                 else if (sFirst == "AUDIO" || sFirst == "IMAGE" || sFirst == "STRING")
                 {
-                    _categories[i].AddQuestion(sFirst, sSecond);
+                    string sThird = str.Split(new Char[] { '§' })[2];
+                    _categories[i].AddQuestion(sFirst, sSecond, sThird);
                 }
             }
+        }
+
+        public void SetPlayer(int id, string name)
+        {
+            if (id >= _players.Length)
+            {
+                throw new IndexOutOfRangeException("Spieler-ID darf nicht größer als " + id + " sein.");
+            }
+            _players[id] = new Player(name, _colors[id]);
+        }
+
+        public Player GetPlayer(int id)
+        {
+            return _players[id];
+        }
+
+        public void correctAnswer(int player, int value)
+        {
+            _players[player].addScore(value);
         }
 
         public string GetCategoryName(int category)
@@ -64,6 +98,11 @@ namespace Jeopardy
         public string getAnswerContent(int category, int question)
         {
             return _categories[category].GetContent(question);
+        }
+
+        public Question getQuestion(int category, int question)
+        {
+            return _categories[category].GetQuestion(question);
         }
     }
 }

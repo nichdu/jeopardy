@@ -1,7 +1,6 @@
 C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\bin\Debug\Jeopardy.exe
 C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\bin\Debug\Jeopardy.pdb
 C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.Form1.resources
 C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.Properties.Resources.resources
 C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\GenerateResource.write.1.tlog
@@ -17,3 +16,8 @@ D:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Deb
 D:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.nameForm.resources
+D:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.QuestionWindow.resources
+C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.nameForm.resources
+C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.QuestionWindow.resources
+C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.MainForm.resources
+C:\Users\Tjark\Dropbox\visual studio 2010\Projects\Jeopardy\Jeopardy\obj\x86\Debug\Jeopardy.FinishForm.resources

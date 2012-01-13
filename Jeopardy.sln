@@ -5,12 +5,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeopardy", "Jeopardy\Jeopar
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release (x64)|x64 = Release (x64)|x64
+		Release (x64)|x86 = Release (x64)|x86
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Debug|x64.ActiveCfg = Debug|x64
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Debug|x64.Build.0 = Debug|x64
 		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Debug|x86.ActiveCfg = Debug|x86
 		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Debug|x86.Build.0 = Debug|x86
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release (x64)|x64.ActiveCfg = Release (x86)|x64
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release (x64)|x64.Build.0 = Release (x86)|x64
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release (x64)|x86.ActiveCfg = Release (x86)|x86
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release (x64)|x86.Build.0 = Release (x86)|x86
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release|x64.ActiveCfg = Release|x64
+		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release|x64.Build.0 = Release|x64
 		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release|x86.ActiveCfg = Release|x86
 		{63FECECB-1749-4E9C-A75F-7DE113FF780D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection

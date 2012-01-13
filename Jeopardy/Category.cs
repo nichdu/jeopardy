@@ -16,7 +16,7 @@ namespace Jeopardy
             _name = name;
         }
 
-        public void AddQuestion(string type, string content)
+        public void AddQuestion(string type, string content, string question)
         {
             Enums.AnswerType atype = Enums.AnswerType.Text;
             switch (type)
@@ -36,17 +36,17 @@ namespace Jeopardy
             {
                 ++i;
             }
-            _questions[i] = new Question(atype, content);
+            _questions[i] = new Question(atype, content, question);
         }
 
-        public void AddQuestion(Enums.AnswerType type, string content)
+        public void AddQuestion(Enums.AnswerType type, string content, string question)
         {
             int i = 0;
             while (_questions[i] != null)
             {
                 ++i;
             }
-            _questions[i] = new Question(type, content);
+            _questions[i] = new Question(type, content, question);
         }
 
         public void SetName(string name)
@@ -67,6 +67,11 @@ namespace Jeopardy
         public string GetContent(int question)
         {
             return _questions[question].GetContent();
+        }
+
+        internal Question GetQuestion(int question)
+        {
+            return new Question(_questions[question]);
         }
     }
 }

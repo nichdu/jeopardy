@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Jeopardy
 {
-    class Enums
+    public class Enums
     {
         public enum AnswerType { Text, Audio, Image };
     }
